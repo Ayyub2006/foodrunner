@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Runner</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Cinzel:wght@400..900&family=Felipa&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quintessential&family=Rouge+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="loader-container">
+    <span class="loader"></span>
+</div> 
+  <header>
+    <div class="nav_bar">
+<!-- <a href="index.html"><div class="logo"><img src="Logo1.png" alt=""></div></a> -->
+      <div class="home">
+        <a href="index.html">Home</a>
+      </div>
+      <div class="restraunt">
+        <a href="Restraunts.html">Restraunts</a>
+      </div>
+      <div class="about">
+        <a href="about.html">About</a>
+      </div>
+     <div class="cart">
+      <a href="cart.html">🛒 Cart <sup id="cart-count"></sup> </a>
+     </div>
+      <div class="login">
+        <a href="login.html">Login</a>
+      </div>
+      <div class="search">
+        <input class="search_box" placeholder="Search by store also!">
+        <button>Search</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="banner">
+      <img class="banner_img" src="Banner1.png" alt="">
+      <img class="banner_img" src="Banner2.png" alt="">
+      <img class="banner_img" src="Banner3.png" alt="">
+      <img class="banner_img" src="Banner4.jpg" alt="">
+    </div>
+    <br><br>
+    <h1 style="text-align: center; color: #0a89c2;">What do you want to have...</h1>
+    <br>
+    <!-- 1st Card Container -->
+    <div class="card_container1">
+
+    <div class="card">
+  <a href="#" style="text-decoration: none; color: black;">
+    <div class="item">
+      <img class="img" src="pizzahut.avif" alt="">
+      <h3 class="heading">Pizza Hut</h3>  
+      <div class="rating">
+        <img class="star" src="star.png" alt="">
+        <span>4.1(739 ratings) | 30-35min</span>
+      </div> 
+      <div class="heading">
+        <p>Pizzas, Pastas</p>
+        <p>South Tukoganj</p>
+      </div>
+      <button class="addToCart"
+        data-name="Pizza Hut"
+        data-price="500"
+        data-image="pizzahut.avif"
+        data-description="Delicious Pizza and Pasta combo">
+        Add to Cart
+      </button>
+      <button class="wishlist">Wishlist❤️</button>
+    </div>
+  </a>
+</div>
+
+<div class="card">
+    <a href="#" style="text-decoration: none; color: black;">
+      <div class="item">
+        <img class="img" src="ccd.avif" alt="">
+        <h3 class="heading">Cafe Coffee Day</h3>  
+        <div class="rating">
+          <img class="star" src="star.png" alt="">
+          <span>4.2 (850 ratings) | 20-25min</span>
+        </div> 
+        <div class="heading">
+          <p>Coffee, Snacks</p>
+          <p>South Tukoganj</p>
+        </div>
+        <button class="addToCart"
+          data-name="Cafe Coffee Day"
+          data-price="250"
+          data-image="ccd.avif"
+          data-description="Coffee & Snacks combo">
+          Add to Cart
+        </button>
+        <button class="wishlist">Wishlist❤️</button>
+      </div>
+    </a>
+  </div>
+
+        <div class="card">
+    <a href="#" style="text-decoration: none; color: black;">
+        <div class="item">
+            <img class="img" src="cake.avif" alt="Theobroma">
+            <h3 class="heading">Theobroma</h3>
+            <div class="rating">
+                <img class="star" src="star.png" alt="">
+                <span style="padding-bottom: 2px;">4.5 (449 ratings) | 25-30 min</span>
+            </div>
+            <div class="heading">Bakery, Desserts, Beverages</div>
+            <div class="heading">Darshan Mall, Race Course Rd</div>
+            <div class="button-group">
+                <button class="addToCart" 
+                data-name="Theobroma"
+                data-price="4000"
+                data-image="cake.avif"
+                data-description="Bakery, Desserts, Beverages">Add to Cart</button>
+                <button class="wishlist">Wishlist ❤️</button>
+            </div>
+        </div>
+    </a>
+</div>
+
+<div class="card">
+    <a href="#" style="text-decoration: none; color: black;">
+        <div class="item">
+            <img class="img" src="burgerking.avif" alt="">
+            <h3 class="heading">Burger King</h3>
+            <div class="rating">
+                <img class="star" src="star.png" alt="">
+                <span>4.2 (399+ ratings) | 25-30 min</span>
+            </div>
+            <div class="heading">Burgers, American</div>
+            <div class="heading">Malhar Mega Mall</div>
+            <button class="addToCart"
+                data-name="Burger King"
+                data-price="200"
+                data-image="burgerking.avif"
+                data-description="Burgers, American">Add to Cart</button>
+            <button class="wishlist">Wishlist❤️</button>
+        </div>
+    </a>
+</div>
+
+        <div class="card">
+          <a href="#" style="text-decoration: none; color: black;">
+          <div class="item">
+            <img class="img" src="ibaco.avif" alt="">
+            <h3 class="heading">Ibaco</h3>  
+            <div class="rating">
+            <img class="star" src="star.png" alt="">
+            <span style="padding-bottom: 2px;"> 4.5(69 ratings) | 20-25min</span>
+          </div> 
+            <div class="heading" >Ice Cream, Deserts</div>
+            <div class="heading">Sudama Nagar</div>
+            <button class="addToCart"
+                data-name="Ibaco"
+                data-price="200"
+                data-image="ibaco.avif"
+                data-description="Ice Cream, Deserts">Add to Cart</button>
+            <button class="wishlist">Wishlist❤️</button>
+        </div>
+    </a>
+</div>
+    </div>    
+    <!-- 2nd Card Container -->
+    <div class="card_container2">
+      
+      <div class="card">
+        <a href="#" style="text-decoration: none; color: black;">
+        <div class="item">
+          <img class="img" src="behrouz.avif" alt="">
+          <h3 class="heading">Behrouz Biryani</h3>  
+          <div class="rating">
+          <img class="star" src="star.png" alt="">
+          <span style="padding-bottom: 2px;"> 4.4(5K+ ratings) | 25-30min</span>
+        </div> 
+          <div class="heading" >Biryani,North Indian</div>
+          <div class="heading">Saket Square</div>
+          <button class="addToCart"
+                data-name="Behrouz Biryani"
+                data-price="450"
+                data-image="behrouz.avif"
+                data-description="Biryani,North Indian">Add to Cart</button>
+            <button class="wishlist">Wishlist❤️</button>
+          </div>
+        </div>
+      </a> 
+
+        <div class="card">
+          <a href="#" style="text-decoration: none; color: black;">
+          <div class="item">
+            <img class="img" src="kfc.avif" alt="">
+            <h3 class="heading">KFC</h3>  
+            <div class="rating">
+            <img class="star" src="star.png" alt="">
+            <span style="padding-bottom: 2px;"> 4.4(5.5K+ ratings) | 15-20min</span>
+          </div> 
+            <div class="heading" >Burgers, Fast Food</div>
+            <div class="heading">South Tukoganj</div>
+            <button class="addToCart"
+                data-name="KFC"
+                data-price="350"
+                data-image="kfc.avif"
+                data-description="Burgers, Fast Food">Add to Cart</button>
+            <button class="wishlist">Wishlist❤️</button>
+            </div>
+          </div>
+        </a>
+  
+          <div class="card">
+            <a href="#" style="text-decoration: none; color: black;">
+            <div class="item">
+              <img class="img" src="macd.avif" alt="">
+              <h3 class="heading">Mac Donalds</h3>  
+              <div class="rating">
+              <img class="star" src="star.png" alt="">
+              <span style="padding-bottom: 2px;"> 4.5(16K+ ratings) | 25-30min</span>
+            </div> 
+              <div class="heading" >Burgers, Beverages</div>
+              <div class="heading">Treasure Island Mall</div>
+              <button class="addToCart"
+                data-name="Mac Donalds"
+                data-price="200"
+                data-image="macd.avif"
+                data-description="Burgers, Beverages">Add to Cart</button>
+            <button class="wishlist">Wishlist❤️</button>
+              </div>
+            </div>
+          </a>
+  
+          <div class="card">
+            <a href="#" style="text-decoration: none; color: black;">
+            <div class="item">
+              <img class="img" src="starbuks.avif" alt="">
+              <h3 class="heading">StraBucks</h3>  
+              <div class="rating">
+              <img class="star" src="star.png" alt="">
+              <span style="padding-bottom: 2px;"> 4.3(1.1K+ ratings) | 15-20min</span>
+            </div> 
+              <div class="heading" >Cafe, Beverages</div>
+              <div class="heading">New Palasia</div>
+             <button class="addToCart"
+                data-name="StraBucks"
+                data-price="500"
+                data-image="starbuks.avif"
+                data-description="Cafe, Beverages">Add to Cart</button>
+            <button class="wishlist">Wishlist❤️</button>
+              </div>
+            </div>
+          </a>
+  
+          <div class="card">
+            <a href="#" style="text-decoration: none; color: black;">
+            <div class="item">
+              <img class="img" src="subway.avif" alt="">
+              <h3 class="heading">Subway</h3>  
+              <div class="rating">
+              <img class="star" src="star.png" alt="">
+              <span style="padding-bottom: 2px;"> 4.2(5.7K+ ratings) | 20-25min</span>
+            </div> 
+              <div class="heading" >Healthy Foods, Salads</div>
+              <div class="heading">Sapna Sangeeta Mall</div>
+              <button class="addToCart"
+                data-name="Subway"
+                data-price="280"
+                data-image="subway.avif"
+                data-description="Healthy Foods, Salads">Add to Cart</button>
+            <button class="wishlist">Wishlist❤️</button>
+              </div>
+            </div>
+          </a>
+      </div>    
+
+      <!-- 3rd Card Container -->
+    <div class="card_container2">
+      
+      <div class="card">
+        <a href="#" style="text-decoration: none; color: black;">
+        <div class="item">
+          <img class="img" src="Apna Avenue.avif" alt="">
+          <h3 class="heading">Apna Avenue</h3>  
+          <div class="rating">
+          <img class="star" src="star.png" alt="">
+          <span style="padding-bottom: 2px;"> 4.4(19K+ ratings) | 25-30min</span>
+        </div> 
+          <div class="heading" >Chinese, Fast Food, Indian</div>
+          <div class="heading">New Palasia</div>
+          <button class="addToCart"
+                data-name="Apna Avenue"
+                data-price="550"
+                data-image="Apna Avenue.avif"
+                data-description="Chinese, Fast Food, Indian">Add to Cart</button>
+            <button class="wishlist">Wishlist❤️</button>
+          </div>
+        </div>
+      </a> 
+
+        <div class="card">
+          <a href="#" style="text-decoration: none; color: black;">
+          <div class="item">
+            <img class="img" src="apna sweets.avif" alt="">
+            <h3 class="heading">Apna Sweets</h3>  
+            <div class="rating">
+            <img class="star" src="star.png" alt="">
+            <span style="padding-bottom: 2px;"> 4.7(16K+ ratings) | 15-20min</span>
+          </div> 
+            <div class="heading" >Sweets, Beverages, Street Food</div>
+            <div class="heading">Vijay Nagar</div>
+           <button class="addToCart"
+                data-name="Apna Sweets"
+                data-price="400"
+                data-image="apna sweets.avif"
+                data-description="Sweets, Beverages, Street Food">Add to Cart</button>
+            <button class="wishlist">Wishlist❤️</button>
+            </div>
+          </div>
+        </a>
+  
+          <div class="card">
+    <a href="#" style="text-decoration: none; color: black;">
+      <div class="item">
+        <img class="img" src="bapu ki kutiya.avif" alt="">
+        <h3 class="heading">Bapu Ki Kutia</h3>  
+        <div class="rating">
+          <img class="star" src="star.png" alt="">
+          <span>4.5 (5k ratings) | 30-35min</span>
+        </div> 
+        <div class="heading">
+          <p>Indian Thali, Snacks</p>
+          <p>Palasia</p>
+        </div>
+        <button class="addToCart"
+          data-name="Bapu Ki Kutia"
+          data-price="350"
+          data-image="bapukikutia.avif"
+          data-description="Authentic Indian Thali">
+          Add to Cart
+        </button>
+        <button class="wishlist">Wishlist❤️</button>
+      </div>
+    </a>
+  </div>
+  
+          <div class="card">
+            <a href="#" style="text-decoration: none; color: black;">
+            <div class="item">
+              <img class="img" src="Big Bowl.avif" alt="">
+              <h3 class="heading">Big Bowl</h3>  
+              <div class="rating">
+              <img class="star" src="star.png" alt="">
+              <span style="padding-bottom: 2px;"> 4.4(216 ratings) | 15-20min</span>
+            </div> 
+              <div class="heading" >Chinese, Tibetan</div>
+              <div class="heading">Treasure Island Mall</div>
+              <button class="addToCart"
+                data-name="Big Bowl"
+                data-price="340"
+                data-image="Big Bowl.avif"
+                data-description="Chinese, Tibetan">Add to Cart</button>
+            <button class="wishlist">Wishlist❤️</button>
+              </div>
+            </div>
+          </a>
+  
+          <div class="card">
+            <a href="#" style="text-decoration: none; color: black;">
+            <div class="item">
+              <img class="img" src="Chicken n serve.avif" alt="">
+              <h3 class="heading">Chicken n Serves</h3>  
+              <div class="rating">
+              <img class="star" src="star.png" alt="">
+              <span style="padding-bottom: 2px;"> 4.2(8.6K+ ratings) | 40-45min</span>
+            </div> 
+              <div class="heading" >Lebanese North Indian</div>
+              <div class="heading">Bypass South</div>
+              <button class="addToCart"
+                data-name="Chicken n Serves"
+                data-price="2500"
+                data-image="Chicken n serve.avif"
+                data-description="Lebanese North Indian">Add to Cart</button>
+            <button class="wishlist">Wishlist❤️</button>
+              </div>
+            </div>
+          </a>
+      </div>    
+
+      <!-- 4th Card Container -->
+    <div class="card_container2">
+      
+      <div class="card">
+        <a href="#" style="text-decoration: none; color: black;">
+        <div class="item">
+          <img class="img" src="99 rotiwala.avif" alt="">
+          <h3 class="heading">99 Rotiwala</h3>  
+          <div class="rating">
+          <img class="star" src="star.png" alt="">
+          <span style="padding-bottom: 2px;"> 4.4(703 ratings) | 25-30min</span>
+        </div> 
+          <div class="heading" >North Indian, Punjabi</div>
+          <div class="heading">Khandwa Road</div>
+          <button class="addToCart"
+                data-name="99 Rotiwala"
+                data-price="99"
+                data-image="99 rotiwala.avif"
+                data-description="North Indian, Punjabi">Add to Cart</button>
+            <button class="wishlist">Wishlist❤️</button>
+          </div>
+        </div>
+      </a> 
+
+        <div class="card">
+          <a href="#" style="text-decoration: none; color: black;">
+          <div class="item">
+            <img class="img" src="dam safar.avif" alt="">
+            <h3 class="heading">Dam Safar</h3>  
+            <div class="rating">
+            <img class="star" src="star.png" alt="">
+            <span style="padding-bottom: 2px;"> 4.7(539 ratings) | 30-35min</span>
+          </div> 
+            <div class="heading" >Sweets, Beverages, Street Food</div>
+            <div class="heading">Treasure Island Mall</div>
+            <button class="addToCart"
+                data-name="Dam Safar"
+                data-price="600"
+                data-image="dam safar.avif"
+                data-description="Sweets, Beverages, Street Food">Add to Cart</button>
+            <button class="wishlist">Wishlist❤️</button>
+            </div>
+          </div>
+        </a>
+  
+          <div class="card">
+            <a href="#" style="text-decoration: none; color: black;">
+            <div class="item">
+              <img class="img" src="Barbeque nation.avif" alt="">
+              <h3 class="heading">Barbeque Nation</h3>  
+              <div class="rating">
+              <img class="star" src="star.png" alt="">
+              <span style="padding-bottom: 2px;"> 4.1(1.8K+ ratings) | 30-35min</span>
+            </div> 
+              <div class="heading" >Barbeque, Biryani</div>
+              <div class="heading">Treasure Island Mall</div>
+              <button class="addToCart"
+                data-name="Barbeque Nation"
+                data-price="800"
+                data-image="Barbeque nation.avif"
+                data-description="Barbeque, Biryani">Add to Cart</button>
+            <button class="wishlist">Wishlist❤️</button>
+              </div>
+            </div>
+          </a>
+  
+          <div class="card">
+            <a href="#" style="text-decoration: none; color: black;">
+            <div class="item">
+              <img class="img" src="dev bakers.avif" alt="">
+              <h3 class="heading">Dev Bakers</h3>  
+              <div class="rating">
+              <img class="star" src="star.png" alt="">
+              <span style="padding-bottom: 2px;"> 4.4(216 ratings) | 15-20min</span>
+            </div> 
+              <div class="heading" >Deserts, Snacks</div>
+              <div class="heading">Manorama Ganj</div>
+             <button class="addToCart"
+                data-name="Dev Bakers"
+                data-price="250"
+                data-image="dev bakers.avif"
+                data-description="Deserts, Snacks">Add to Cart</button>
+            <button class="wishlist">Wishlist❤️</button>
+              </div>
+            </div>
+          </a>
+  
+          <div class="card">
+            <a href="#" style="text-decoration: none; color: black;">
+            <div class="item">
+              <img class="img" src="gourmet ice cream.avif" alt="">
+              <h3 class="heading">Gourment Ice Cream</h3>  
+              <div class="rating">
+              <img class="star" src="star.png" alt="">
+              <span style="padding-bottom: 2px;"> 4.2(9 ratings) | 40-45min</span>
+            </div> 
+              <div class="heading" >Ice Cream, Cakes, Deserts</div>
+              <div class="heading">South Tukoganj</div>
+             <button class="addToCart"
+                data-name="Gourment Ice Cream"
+                data-price="280"
+                data-image="gourmet ice cream.avif"
+                data-description="Ice Cream, Cakes, Deserts">Add to Cart</button>
+            <button class="wishlist">Wishlist❤️</button>
+              </div>
+            </div>
+          </a>
+      </div>    
+
+      <!-- 5th Card Container -->
+    <div class="card_container2">
+      
+  <div class="card">
+    <a href="#" style="text-decoration: none; color: black;">
+      <div class="item">
+        <img class="img" src="dominos.avif" alt="">
+        <h3 class="heading">Domino's Pizza</h3>  
+        <div class="rating">
+          <img class="star" src="star.png" alt="">
+          <span>4.3 (1.2k ratings) | 25-30min</span>
+        </div> 
+        <div class="heading">
+          <p>Pizzas</p>
+          <p>Vijay Nagar</p>
+        </div>
+        <button class="addToCart"
+          data-name="Domino's Pizza"
+          data-price="450"
+          data-image="dominos.avif"
+          data-description="Hot and fresh pizzas">
+          Add to Cart
+        </button>
+        <button class="wishlist">Wishlist❤️</button>
+      </div>
+    </a>
+  </div>
+
+
+        <div class="card">
+          <a href="#" style="text-decoration: none; color: black;">
+          <div class="item">
+            <img class="img" src="mocha.jpeg" alt="">
+            <h3 class="heading">Mocha Cafe</h3>  
+            <div class="rating">
+            <img class="star" src="star.png" alt="">
+            <span style="padding-bottom: 2px;"> 4.7(539 ratings) | 30-35min</span>
+          </div> 
+            <div class="heading" >Sweets, Beverages, Street Food</div>
+            <div class="heading">Y N Road</div>
+            <button class="addToCart"
+          data-name="Mocha Cafe"
+          data-price="700"
+          data-image="mocha.jpeg"
+          data-description="Sweets, Beverages, Street Food">
+          Add to Cart
+        </button>
+            <button class="wishlist">Wishlist❤️</button>
+            </div>
+          </div>
+        </a>
+  
+          <div class="card">
+            <a href="#" style="text-decoration: none; color: black;">
+            <div class="item">
+              <img class="img" src="mocha.avif" alt="">
+              <h3 class="heading">Dhaba The Family restraunt</h3>  
+              <div class="rating">
+              <img class="star" src="star.png" alt="">
+              <span style="padding-bottom: 2px;"> 4.1(1.8K+ ratings) | 30-35min</span>
+            </div> 
+              <div class="heading" > Barbeque, Family Restaurant</div>
+              <div class="heading">Treasure Island Mall</div>
+              <button class="addToCart"
+          data-name="Dhaba The Family restraunt"
+          data-price="700"
+          data-image="mocha.avif"
+          data-description="Barbeque, Family Restaurant">
+          Add to Cart
+        </button>
+              <button class="wishlist" data-name="Item">Wishlist❤️</button>
+              </div>
+            </div>
+          </a>
+  
+          <div class="card">
+            <a href="#" style="text-decoration: none; color: black;">
+            <div class="item">
+              <img class="img" src="mitti.avif" alt="">
+              <h3 class="heading">Mitti - Organic Fresh Desi</h3>  
+              <div class="rating">
+              <img class="star" src="star.png" alt="">
+              <span style="padding-bottom: 2px;"> 4.4(216 ratings) | 15-20min</span>
+            </div> 
+              <div class="heading" >Deserts, Snacks</div>
+              <div class="heading">Manorama Ganj</div>
+              <button class="addToCart"
+          data-name="Mitti - Organic Fresh Desi"
+          data-price="450"
+          data-image="mitti.avif"
+          data-description="Deserts, Snacks">
+          Add to Cart
+        </button>
+              <button class="wishlist">Wishlist❤️</button>
+              </div>
+            </div>
+          </a>
+  
+          <div class="card">
+            <a href="#" style="text-decoration: none; color: black;">
+            <div class="item">
+              <img class="img" src="mr beans.avif" alt="">
+              <h3 class="heading">Mr. Beans</h3>  
+              <div class="rating">
+              <img class="star" src="star.png" alt="">
+              <span style="padding-bottom: 2px;"> 4.2(9 ratings) | 40-45min</span>
+            </div> 
+              <div class="heading" >Coffee, Italian, Shakes</div>
+              <div class="heading">Old Palasia</div>
+             <button class="addToCart"
+          data-name="Mr. Beans"
+          data-price="650"
+          data-image="mr beans.avif"
+          data-description="Coffee, Italian, Shakes">
+          Add to Cart
+        </button>
+              <button class="wishlist">Wishlist❤️</button>
+              </div>
+            </div>
+          </a>
+      </div>    
+
+
+    <!-- 6th Card Container -->
+<div class="card_container2">
+
+  <div class="card">
+    <a href="#" style="text-decoration: none; color: black;">
+      <div class="item">
+        <img class="img" src="bake n shake.avif" alt="Bake N Shake">
+        <h3 class="heading">Bake N Shake</h3>
+        <div class="rating">
+          <img class="star" src="star.png" alt="">
+          <span>4.4 (703 ratings) | 25-30 min</span>
+        </div>
+        <div class="heading">North Indian, Continental</div>
+        <div class="heading">Vijay Nagar</div>
+        <button class="addToCart"
+          data-name="Bake N Shake"
+          data-price="400"
+          data-image="bake n shake.avif"
+          data-description="North Indian and Continental Cuisine">
+          Add to Cart
+        </button>
+        <button class="wishlist">Wishlist ❤️</button>
+      </div>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href="#" style="text-decoration: none; color: black;">
+      <div class="item">
+        <img class="img" src="nbc.avif" alt="Nothing Before Coffee">
+        <h3 class="heading">Nothing Before Coffee</h3>
+        <div class="rating">
+          <img class="star" src="star.png" alt="">
+          <span>4.7 (539 ratings) | 30-35 min</span>
+        </div>
+        <div class="heading">Coffee, Beverages, Street Food</div>
+        <div class="heading">Treasure Island Mall</div>
+        <button class="addToCart"
+          data-name="Nothing Before Coffee"
+          data-price="250"
+          data-image="nbc.avif"
+          data-description="Specialty Coffee and Beverages">
+          Add to Cart
+        </button>
+        <button class="wishlist">Wishlist ❤️</button>
+      </div>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href="#" style="text-decoration: none; color: black;">
+      <div class="item">
+        <img class="img" src="cafe c1.avif" alt="Cafe Chapter One">
+        <h3 class="heading">Cafe Chapter One</h3>
+        <div class="rating">
+          <img class="star" src="star.png" alt="">
+          <span>4.1 (1.8K+ ratings) | 30-35 min</span>
+        </div>
+        <div class="heading">Cafe, Mexican</div>
+        <div class="heading">Rasoma Square</div>
+        <button class="addToCart"
+          data-name="Cafe Chapter One"
+          data-price="350"
+          data-image="cafe c1.avif"
+          data-description="Cafe and Authentic Mexican Dishes">
+          Add to Cart
+        </button>
+        <button class="wishlist">Wishlist ❤️</button>
+      </div>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href="#" style="text-decoration: none; color: black;">
+      <div class="item">
+        <img class="img" src="krozzon.avif" alt="Krozzon By Masters Bakery">
+        <h3 class="heading">Krozzon By Masters Bakery</h3>
+        <div class="rating">
+          <img class="star" src="star.png" alt="">
+          <span>4.4 (216 ratings) | 15-20 min</span>
+        </div>
+        <div class="heading">Bakery, Pizza, Pasta, Sandwich</div>
+        <div class="heading">Vijay Nagar</div>
+        <button class="addToCart"
+          data-name="Krozzon By Masters Bakery"
+          data-price="300"
+          data-image="krozzon.avif"
+          data-description="Bakery Items, Pizza, Pasta, and Sandwiches">
+          Add to Cart
+        </button>
+        <button class="wishlist">Wishlist ❤️</button>
+      </div>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href="#" style="text-decoration: none; color: black;">
+      <div class="item">
+        <img class="img" src="absolute.jpg" alt="Absolute Coffee Brewers">
+        <h3 class="heading">Absolute Coffee Brewers</h3>
+        <div class="rating">
+          <img class="star" src="star.png" alt="">
+          <span>4.2 (9 ratings) | 40-45 min</span>
+        </div>
+        <div class="heading">Coffee, Continental, Tea, Shake</div>
+        <div class="heading">South Tukoganj</div>
+        <button class="addToCart"
+          data-name="Absolute Coffee Brewers"
+          data-price="280"
+          data-image="absolute.jpg"
+          data-description="Coffee, Continental Dishes, Tea, and Shakes">
+          Add to Cart
+        </button>
+        <button class="wishlist">Wishlist ❤️</button>
+      </div>
+    </a>
+  </div>
+
+</div>
+<!-- 7th Card Container -->
+<div class="card_container2">
+
+  <div class="card">
+    <a href="#" style="text-decoration: none; color: black;">
+      <div class="item">
+        <img class="img" src="nazm.avif" alt="Nazm by WOW CREST">
+        <h3 class="heading">Nazm by WOW CREST</h3>
+        <div class="rating">
+          <img class="star" src="star.png" alt="">
+          <span>4.4 (703 ratings) | 25-30 min</span>
+        </div>
+        <div class="heading">North Indian, Punjabi</div>
+        <div class="heading">Rasoma Square</div>
+        <button class="addToCart"
+          data-name="Nazm by WOW CREST"
+          data-price="450"
+          data-image="nazm.avif"
+          data-description="Authentic North Indian and Punjabi Cuisine">
+          Add to Cart
+        </button>
+        <button class="wishlist">Wishlist ❤️</button>
+      </div>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href="#" style="text-decoration: none; color: black;">
+      <div class="item">
+        <img class="img" src="firangi.avif" alt="Nomadic by Firangi">
+        <h3 class="heading">Nomadic by Firangi</h3>
+        <div class="rating">
+          <img class="star" src="star.png" alt="">
+          <span>4.7 (539 ratings) | 30-35 min</span>
+        </div>
+        <div class="heading">Continental, Bar Food, Beverages</div>
+        <div class="heading">Near LifeCare</div>
+        <button class="addToCart"
+          data-name="Nomadic by Firangi"
+          data-price="550"
+          data-image="firangi.avif"
+          data-description="Continental Dishes, Bar Food, and Beverages">
+          Add to Cart
+        </button>
+        <button class="wishlist">Wishlist ❤️</button>
+      </div>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href="#" style="text-decoration: none; color: black;">
+      <div class="item">
+        <img class="img" src="sayaji.avif" alt="Mediterra - Sayaji Hotel">
+        <h3 class="heading">Mediterra - Sayaji Hotel</h3>
+        <div class="rating">
+          <img class="star" src="star.png" alt="">
+          <span>4.1 (1.8K+ ratings) | 30-35 min</span>
+        </div>
+        <div class="heading">Continental, Mediterranean</div>
+        <div class="heading">Sayaji Hotel</div>
+        <button class="addToCart"
+          data-name="Mediterra - Sayaji Hotel"
+          data-price="700"
+          data-image="sayaji.avif"
+          data-description="Continental and Mediterranean Cuisine">
+          Add to Cart
+        </button>
+        <button class="wishlist">Wishlist ❤️</button>
+      </div>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href="#" style="text-decoration: none; color: black;">
+      <div class="item">
+        <img class="img" src="mama loca.avif" alt="Mama Loca">
+        <h3 class="heading">Mama Loca</h3>
+        <div class="rating">
+          <img class="star" src="star.png" alt="">
+          <span>4.4 (216 ratings) | 15-20 min</span>
+        </div>
+        <div class="heading">Middle Eastern, Lebanese, Greek</div>
+        <div class="heading">Vijay Nagar</div>
+        <button class="addToCart"
+          data-name="Mama Loca"
+          data-price="500"
+          data-image="mama loca.avif"
+          data-description="Middle Eastern, Lebanese, and Greek Cuisine">
+          Add to Cart
+        </button>
+        <button class="wishlist">Wishlist ❤️</button>
+      </div>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href="#" style="text-decoration: none; color: black;">
+      <div class="item">
+        <img class="img" src="eden.avif" alt="Eden Unplugged">
+        <h3 class="heading">Eden Unplugged</h3>
+        <div class="rating">
+          <img class="star" src="star.png" alt="">
+          <span>4.2 (9 ratings) | 40-45 min</span>
+        </div>
+        <div class="heading">North Indian, Italian</div>
+        <div class="heading">South Tukoganj</div>
+        <button class="addToCart"
+          data-name="Eden Unplugged"
+          data-price="480"
+          data-image="eden.avif"
+          data-description="North Indian and Italian Specialties">
+          Add to Cart
+        </button>
+        <button class="wishlist">Wishlist ❤️</button>
+      </div>
+    </a>
+  </div>
+
+</div>
+    
+
+
+<!-- 8th Card Container -->
+<div class="card_container2">
+
+  <div class="card">
+    <a href="#" style="text-decoration: none; color: black;">
+      <div class="item">
+        <img class="img" src="sheraton.avif" alt="Araana - Sheraton Grand">
+        <h3 class="heading">Araana - Sheraton Grand</h3>
+        <div class="rating">
+          <img class="star" src="star.png" alt="">
+          <span>4.4 (703 ratings) | 25-30 min</span>
+        </div>
+        <div class="heading">North Indian, Desserts</div>
+        <div class="heading">Sheraton Grand, Omaxe City 1</div>
+        <button class="addToCart"
+          data-name="Araana - Sheraton Grand"
+          data-price="850"
+          data-image="sheraton.avif"
+          data-description="Premium North Indian and Dessert Selection">
+          Add to Cart
+        </button>
+        <button class="wishlist">Wishlist ❤️</button>
+      </div>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href="#" style="text-decoration: none; color: black;">
+      <div class="item">
+        <img class="img" src="papaya.avif" alt="Hill's View - Papaya Tree">
+        <h3 class="heading">Hill's View - Papaya Tree</h3>
+        <div class="rating">
+          <img class="star" src="star.png" alt="">
+          <span>4.7 (539 ratings) | 30-35 min</span>
+        </div>
+        <div class="heading">Continental, Chinese, Oriental</div>
+        <div class="heading">A B Road Rau</div>
+        <button class="addToCart"
+          data-name="Hill's View - Papaya Tree"
+          data-price="780"
+          data-image="papaya.avif"
+          data-description="Continental, Chinese, and Oriental Dishes">
+          Add to Cart
+        </button>
+        <button class="wishlist">Wishlist ❤️</button>
+      </div>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href="#" style="text-decoration: none; color: black;">
+      <div class="item">
+        <img class="img" src="radisson.avif" alt="Ni Hao - Radisson Blu Hotel">
+        <h3 class="heading">Ni Hao - Radisson Blu Hotel</h3>
+        <div class="rating">
+          <img class="star" src="star.png" alt="">
+          <span>4.1 (1.8K+ ratings) | 30-35 min</span>
+        </div>
+        <div class="heading">Asian, Chinese, Thai, Desserts</div>
+        <div class="heading">Vijay Nagar</div>
+        <button class="addToCart"
+          data-name="Ni Hao - Radisson Blu Hotel"
+          data-price="920"
+          data-image="radisson.avif"
+          data-description="Asian Fusion, Chinese, Thai Delicacies and Desserts">
+          Add to Cart
+        </button>
+        <button class="wishlist">Wishlist ❤️</button>
+      </div>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href="#" style="text-decoration: none; color: black;">
+      <div class="item">
+        <img class="img" src="lazeez.avif" alt="Lazeez Affaire">
+        <h3 class="heading">Lazeez Affaire</h3>
+        <div class="rating">
+          <img class="star" src="star.png" alt="">
+          <span>4.4 (216 ratings) | 15-20 min</span>
+        </div>
+        <div class="heading">North Indian, Chinese, Biryani</div>
+        <div class="heading">Shree Nagar</div>
+        <button class="addToCart"
+          data-name="Lazeez Affaire"
+          data-price="650"
+          data-image="lazeez.avif"
+          data-description="North Indian Delights, Chinese and Biryani">
+          Add to Cart
+        </button>
+        <button class="wishlist">Wishlist ❤️</button>
+      </div>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href="#" style="text-decoration: none; color: black;">
+      <div class="item">
+        <img class="img" src="yazu.avif" alt="Yazu At The Dome">
+        <h3 class="heading">Yazu At The Dome</h3>
+        <div class="rating">
+          <img class="star" src="star.png" alt="">
+          <span>4.2 (9 ratings) | 40-45 min</span>
+        </div>
+        <div class="heading">Thai, Korean, Japanese</div>
+        <div class="heading">Nipania Road</div>
+        <button class="addToCart"
+          data-name="Yazu At The Dome"
+          data-price="890"
+          data-image="yazu.avif"
+          data-description="Thai, Korean, and Japanese Gourmet Cuisine">
+          Add to Cart
+        </button>
+        <button class="wishlist">Wishlist ❤️</button>
+      </div>
+    </a>
+  </div>
+
+</div>
+
+  </main>
+  <footer>
+   
+    <div class="useful_links">
+    <div class="useful">
+      <h3 style="color: #0a89c2;">USeful Links</h3>
+      <a href="index.html">
+        <div>Home</div>
+      </a>
+      <a href="about.html">
+        <div>About</div>
+      </a>
+      <a href="Offer.html">
+        <div>Offers</div>
+      </a>
+      <a href="login.html">
+        <div>Login</div>
+      </a>
+    </div>
+
+    
+    <div class="useful">
+      <h3 style="color: #0a89c2;">Admin Links</h3>
+      <a href="#">
+        <div>Registration</div>
+      </a>
+      <a href="#">
+        <div>Admin Login</div>
+      </a>
+      <a href="#">
+        <div>FAQs</div>
+      </a>
+      <a href="login.html">
+        <div>Contact Us</div>
+      </a>   
+    </div>
+  
+
+  <div class="social">
+    <h3 style="color: #0a89c2;">Keep in touch!</h3>
+    <div class="Touch_Img">
+      <a href="https://www.instagram.com/ayyubk___07" target="_blank">
+        <img src="instagram.png" alt="">
+      </a>
+      <a href="https://www.linkedin.com/in/ayyubkhan20" target="_blank">
+        <img src="linkedin.png" alt="">
+      </a>
+      <a href="#">
+        <img src="twitter.png" alt="">
+      </a>
+      <a href="#">
+        <img src="facebook.png" alt="">
+      </a>
+    </div>
+  </div>
+
+  <div class="head1">
+    <h3 style="color: #0a89c2;">FoodRunner</h3>
+  <div class="para">
+    FoodRunner is your one-stop destination for delicious meals! Order your favorite food online for quick delivery or explore nearby stores with seamless navigation to enjoy a dine-in experience. We aim to bring convenience and flavor together, ensuring every meal is a delightful journey.
+  </div>
+</div>
+</div>
+  </footer>
+  <script src="index.js"></script> 
+</body>
+</html>

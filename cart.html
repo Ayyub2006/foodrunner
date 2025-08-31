@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Cinzel:wght@400..900&family=Felipa&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quintessential&family=Rouge+Script&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <div class="nav_bar">
+      <a href="index.html"><div class="logo"><img src="Images/Logo1.png" alt=""></div></a>
+      <div class="home">
+        <a href="index.html">Home</a>
+      </div>
+      <div class="restraunt">
+        <a href="Restraunts.html">Restraunts</a>
+      </div>
+      <div class="about">
+        <a href="about.html">About</a>
+      </div>
+     <div class="cart">
+      <a href="cart.html">🛒 Cart</a>
+     </div>
+      <div class="login">
+        <a href="login.html">Login</a>
+      </div>
+      <div class="search">
+        <input class="search_box" placeholder="Search by store also!">
+        <button>Search</button>
+      </div>
+    </div>
+  </header>
+<main>
+  <div class="container">
+    <h1 style="color: #0a89c2;">Your Cart</h1>
+    <p class="item-count">0 items in your cart</p>
+
+    <!-- Cart Items Container -->
+    <div id="cart-items"></div>
+
+    <!-- Order Summary -->
+    <div class="order-summary">
+      <h2 style="color: #0a89c2;">Order Summary</h2>
+      <div class="summary-row">
+        <span>Subtotal</span>
+        <span id="subtotal">0 Rs</span>
+      </div>
+      <div class="summary-row">
+        <span>Tax (9%)</span>
+        <span id="tax">0 Rs</span>
+      </div>
+      <div class="summary-row">
+        <span>Delivery Fee</span>
+        <span>120 Rs</span>
+      </div>
+      <hr />
+      <div class="summary-row total">
+        <span>Total</span>
+        <span id="total">0 Rs</span>
+      </div>
+    </div>
+
+    <!-- Place Order Button -->
+    <button class="place-order" onclick="placeOrder()">Place Order</button>
+    <p class="delivery-note">Estimated delivery: 30–45 minutes</p>
+  </div>
+</main>
+
+ <footer>
+   
+    <div class="useful_links">
+    <div class="useful">
+      <h3 style="color: #0a89c2;">USeful Links</h3>
+      <a href="index.html">
+        <div>Home</div>
+      </a>
+      <a href="about.html">
+        <div>About</div>
+      </a>
+      <a href="Offer.html">
+        <div>Offers</div>
+      </a>
+      <a href="login.html">
+        <div>Login</div>
+      </a>
+    </div>
+
+    
+    <div class="useful">
+      <h3 style="color: #0a89c2;">Admin Links</h3>
+      <a href="#">
+        <div>Registration</div>
+      </a>
+      <a href="#">
+        <div>Admin Login</div>
+      </a>
+      <a href="#">
+        <div>FAQs</div>
+      </a>
+      <a href="login.html">
+        <div>Contact Us</div>
+      </a>   
+    </div>
+  
+
+  <div class="social">
+    <h3 style="color: #0a89c2;">Keep in touch!</h3>
+    <div class="Touch_Img">
+      <a href="https://www.instagram.com/ayyubk___07" target="_blank">
+        <img src="instagram.png" alt="">
+      </a>
+      <a href="https://www.linkedin.com/in/ayyubkhan20" target="_blank">
+        <img src="linkedin.png" alt="">
+      </a>
+      <a href="#">
+        <img src="twitter.png" alt="">
+      </a>
+      <a href="#">
+        <img src="facebook.png" alt="">
+      </a>
+    </div>
+  </div>
+
+  <div class="head1">
+    <h3 style="color: #0a89c2;">FoodRunner</h3>
+  <div class="para">
+    FoodRunner is your one-stop destination for delicious meals! Order your favorite food online for quick delivery or explore nearby stores with seamless navigation to enjoy a dine-in experience. We aim to bring convenience and flavor together, ensuring every meal is a delightful journey.
+  </div>
+</div>
+</div>
+  </footer>
+  <script src="cart.js"></script>
+</body>
+</html>
